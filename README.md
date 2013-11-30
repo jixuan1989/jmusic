@@ -19,3 +19,10 @@ TODO:
 
 copyright from H and M.
 contact sainthxd@gmail.com for any propose.
+
+=============
+how to build:
+mvn eclipse:eclipse
+you may need to add jfxrt.jar yourself.
+in Mac, the location is:/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib  (remember replace 1.7.0_45 with your java version.)
+

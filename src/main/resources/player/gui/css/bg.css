@@ -1,0 +1,12 @@
+.bg {
+    -fx-background-color: rgb(80,80,80,0.3);
+    -fx-background-insets: 1;
+    -fx-background-radius: 3;
+    -fx-padding: -9 5 -11 0;
+}
+.bg1{
+    -fx-background-color: rgb(70,70,70,0.1);
+    -fx-background-insets: 1;
+    -fx-background-radius: 3;
+    -fx-padding: -9 5 -11 0;
+}

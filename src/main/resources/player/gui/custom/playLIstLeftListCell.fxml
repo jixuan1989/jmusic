@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<fx:root type="javafx.scene.layout.AnchorPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <ImageView fx:id="listIcon" fitHeight="20.0" fitWidth="20.0" layoutX="5.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+    <Label fx:id="listLabel" layoutX="29.0" layoutY="3.0" onContextMenuRequested="#openContextMenu" onMouseClicked="#showPlayList" prefHeight="20.0" prefWidth="70.0" text="%playlist.defaultname">
+      <contextMenu>
+        <ContextMenu fx:id="contextMenu">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#renameList" text="%playlist.context.rename" fx:id="renameListItem" />
+            <MenuItem mnemonicParsing="false" onAction="#clearList" text="%playlist.context.clear" fx:id="clearListItem" />
+            <MenuItem mnemonicParsing="false" onAction="#deleteList" text="%playlist.context.delete" fx:id="deleteListItem" />
+            <MenuItem mnemonicParsing="false" onAction="#addLocalList" text="%playlist.context.newlocallist" fx:id="newLocalListItem" />
+            <MenuItem mnemonicParsing="false" onAction="#addOnlineList" text="%playlist.context.newonlinelist" fx:id="newOnlineListItem" />
+            <MenuItem mnemonicParsing="false" onAction="#refreshList" text="%playlist.context.refresh" fx:id="refreshListItem" />
+          </items>
+        </ContextMenu>
+      </contextMenu>
+    </Label>
+    <TextField fx:id="listText" layoutX="28.0" layoutY="3.0" onAction="#rename" prefHeight="20.0" prefWidth="70.0001220703125" visible="false" />
+  </children>
+</fx:root>

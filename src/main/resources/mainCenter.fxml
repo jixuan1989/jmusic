@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="mainCenterPane" prefHeight="113.0" prefWidth="368.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="player.gui.controllers.MainCenterController">
+  <children>
+    <ImageView id="emptyImageView3" fitHeight="100.0" fitWidth="110.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@imgs/default.gif" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <AnchorPane id="anchorPane1" layoutX="114.0" layoutY="7.0" prefHeight="100.0" prefWidth="241.00009999999747">
+      <children>
+        <AnchorPane id="anchorPane2" minHeight="23.0" prefHeight="23.0" prefWidth="242.0">
+          <children>
+            <Label id="label2" layoutX="2.0" prefHeight="23.0" prefWidth="135.99990000000253" text="current_name" />
+            <FlowPane id="flowPane2" columnHalignment="RIGHT" layoutX="194.0" prefHeight="23.0" prefWidth="46.0">
+              <children>
+                <ImageView id="emptyImageView4" fx:id="loveIcon" fitHeight="23.0" fitWidth="23.0" onMousePressed="#changeLoveStatus" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@imgs/dislike.png" preserveRatio="false" smooth="false" />
+                  </image>
+                </ImageView>
+                <ImageView id="emptyImageView4" fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@imgs/share.png" preserveRatio="false" smooth="false" />
+                  </image>
+                </ImageView>
+              </children>
+            </FlowPane>
+          </children>
+        </AnchorPane>
+        <AnchorPane id="anchorPane3" layoutX="2.0" layoutY="23.0" prefHeight="32.0" prefWidth="238.0">
+          <children>
+            <Label id="label3" alignment="CENTER" contentDisplay="CENTER" layoutX="199.0" layoutY="11.0" prefWidth="40.0" text="00:00" />
+            <Slider layoutX="7.0" layoutY="11.0" prefWidth="185.0" />
+          </children>
+        </AnchorPane>
+        <AnchorPane id="anchorPane4" layoutX="2.0" layoutY="55.0" prefHeight="44.0" prefWidth="238.0">
+          <children>
+            <ImageView id="emptyImageView5" fitHeight="30.0" fitWidth="30.0" layoutX="5.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@imgs/pre.png" preserveRatio="false" smooth="false" />
+              </image>
+            </ImageView>
+            <ImageView id="emptyImageView5" fitHeight="40.0" fitWidth="40.0" layoutX="39.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@imgs/play.png" preserveRatio="false" smooth="false" />
+              </image>
+            </ImageView>
+            <ImageView id="emptyImageView5" fitHeight="30.0" fitWidth="30.0" layoutX="83.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@imgs/next.png" preserveRatio="false" smooth="false" />
+              </image>
+            </ImageView>
+            <ImageView id="emptyImageView5" fitHeight="30.0" fitWidth="30.0" layoutX="119.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@imgs/random.png" preserveRatio="false" smooth="false" />
+              </image>
+            </ImageView>
+            <ImageView id="emptyImageView5" fx:id="volumeIcon" depthTest="INHERIT" fitHeight="30.0" fitWidth="30.0" layoutX="149.0" layoutY="9.0" onMouseEntered="#showVolumePane" pickOnBounds="true" preserveRatio="true" scaleZ="2.0" translateZ="2.0">
+              <image>
+                <Image url="@imgs/volums.png" preserveRatio="false" smooth="false" />
+              </image>
+              <rotationAxis>
+                <Point3D z="2.0" />
+              </rotationAxis>
+            </ImageView>
+            <ToggleButton fx:id="qualityToggle" depthTest="DISABLE" layoutX="178.0" layoutY="11.0" mnemonicParsing="false" onAction="#changeQuality" prefHeight="23.0" prefWidth="60.0" scaleZ="1.0" selected="false" text="%music.quality" translateZ="0.0" wrapText="false">
+              <font>
+                <Font size="10.0" />
+              </font>
+              <rotationAxis>
+                <Point3D z="1.0" />
+              </rotationAxis>
+            </ToggleButton>
+            <AnchorPane id="volums" fx:id="volumePane" depthTest="DISABLE" layoutX="151.0" layoutY="8.0" minWidth="30.0" onMouseExited="#mayHideVolumePane" prefHeight="29.0" prefWidth="78.0" styleClass="bg1" visible="false">
+              <children>
+                <Slider id="volumeSlide" fx:id="volumeSlider" layoutX="28.0" layoutY="7.0" minWidth="30.0" prefWidth="46.0" visible="false" />
+              </children>
+            </AnchorPane>
+          </children>
+        </AnchorPane>
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>

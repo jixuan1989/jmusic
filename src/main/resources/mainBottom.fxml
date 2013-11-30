@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<!--<?import player.gui.custom.SearchBoxControl?>-->
+
+<AnchorPane id="mainBottomPane" prefHeight="38.0" prefWidth="368.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="player.gui.controllers.MainBottomController">
+  <children>
+    <Button id="button2" layoutX="199.0" layoutY="8.0" mnemonicParsing="false" prefWidth="54.0" text="%app.equalize" />
+    <Button id="button2" layoutX="255.0" layoutY="8.0" mnemonicParsing="false" prefWidth="54.0" text="%app.lyric" />
+    <Button id="button2" layoutX="312.0" layoutY="8.0" mnemonicParsing="false" prefWidth="54.0" text="%app.netwindow" />
+    <AnchorPane id="searchBox" layoutX="0.0" layoutY="8.0" minHeight="24.0" prefHeight="24.0" prefWidth="190.99990000000253" styleClass="search-box">
+      <children>
+        <TextField fx:id="textField" layoutX="1.0" layoutY="0.0" prefHeight="24.0" prefWidth="191.0" />
+        <Button fx:id="clearButton" layoutX="176.0" layoutY="6.0" minHeight="13.0" minWidth="12.0" mnemonicParsing="false" onAction="#clearSearchText" prefHeight="13.0" prefWidth="12.0" text="Button" visible="false" />
+      </children>
+      <stylesheets>
+        <URL value="@player/gui/custom/SearchBox.css" />
+      </stylesheets>
+    </AnchorPane>
+    <!-- <SearchBoxControl layoutX="4.0" layoutY="5.0" prefHeight="27.0" prefWidth="184.0" />-->
+  </children>
+</AnchorPane>

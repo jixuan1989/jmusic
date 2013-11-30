@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<!--<?scenebuilder-preview-i18n-resource mainTop.properties?>-->
+
+<AnchorPane fx:id="mainTopPane" minHeight="32.0" onMouseDragOver="#moveWindow" onMouseDragged="#moveWindow" onMousePressed="#prepareForMoveWindow" prefHeight="32.0" prefWidth="368.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="player.gui.controllers.MainTopController">
+  <children>
+    <ImageView id="emptyImageView1" fx:id="brandIcon" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@imgs/title.png" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <Label id="label1" fx:id="appLabel" layoutX="30.0" prefHeight="30.0" prefWidth="79.0" text="%app.title" />
+    <FlowPane id="flowPane1" columnHalignment="RIGHT" layoutX="215.0" prefHeight="30.0" prefWidth="154.0">
+      <children>
+        <ImageView id="emptyImageView2" fx:id="skinIcon" fitHeight="25.0" fitWidth="25.0" onMouseEntered="#openSkinSetting" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@imgs/skin.png" preserveRatio="false" smooth="false" />
+          </image>
+        </ImageView>
+        <ImageView id="emptyImageView2" fx:id="settingIcon" fitHeight="25.0" fitWidth="25.0" onMouseEntered="#openSetting" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@imgs/setting.png" preserveRatio="false" smooth="false" />
+          </image>
+        </ImageView>
+        <ImageView id="emptyImageView2" fx:id="minIcon" fitHeight="30.0" fitWidth="30.0" onMouseEntered="#minWindow" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@imgs/min.png" preserveRatio="false" smooth="false" />
+          </image>
+        </ImageView>
+        <ImageView id="emptyImageView2" fx:id="upIcon" fitHeight="30.0" fitWidth="30.0" onMouseEntered="#upWindow" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@imgs/max.png" preserveRatio="false" smooth="false" />
+          </image>
+        </ImageView>
+        <ImageView id="emptyImageView2" fx:id="closeIcon" fitHeight="30.0" fitWidth="30.0" onMousePressed="#closeApp" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@imgs/close.png" preserveRatio="false" smooth="false" />
+          </image>
+        </ImageView>
+      </children>
+    </FlowPane>
+  </children>
+</AnchorPane>

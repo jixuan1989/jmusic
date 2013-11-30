@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="playlistPane" prefHeight="308.0" prefWidth="368.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="player.gui.controllers.PlaylistController">
+  <center>
+    <SplitPane fx:id="splitPane" dividerPositions="0.3360655737704918" focusTraversable="true" prefHeight="160.0" prefWidth="200.0">
+      <items>
+            <BorderPane maxWidth="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="107.0">
+              <top>
+                <Label maxWidth="-1.0" minHeight="30.0" minWidth="-1.0" prefHeight="30.0" prefWidth="-1.0" text="%app.mymusic" BorderPane.alignment="CENTER" />
+              </top>
+<center>
+                <ListView fx:id="leftList" maxWidth="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" BorderPane.alignment="CENTER" />
+</center>
+            </BorderPane>
+        <BorderPane prefHeight="200.0" prefWidth="200.0">
+          <top>
+            <ToolBar prefWidth="253.0">
+              <items>
+                <Button fx:id="addMusicButton" mnemonicParsing="false" onAction="#addMusic" text="%playlist.addmusic" />
+                <Button fx:id="sortMusicButton" mnemonicParsing="false" onAction="#sortMusic" text="%playlist.sortmusic" />
+              </items>
+            </ToolBar>
+          </top>
+<center>
+                <ListView fx:id="rightList" prefHeight="-1.0" prefWidth="-1.0" />
+</center>
+        </BorderPane>
+      </items>
+    </SplitPane>
+  </center>
+</BorderPane>

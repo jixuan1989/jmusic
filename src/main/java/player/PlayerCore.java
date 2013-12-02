@@ -54,7 +54,7 @@ public class PlayerCore{
 	/**
 	 * 监听者们
 	 */
-	List<PlayerListener> listeners=new ArrayList<>();
+	List<PlayerListener> listeners=new ArrayList<PlayerListener>();
 	
 	public PlayerCore() throws IOException, ClassNotFoundException {
 		config=Config.diserialize(new File(System.getProperty("user.home")+File.pathSeparator+".jmusic","config"));

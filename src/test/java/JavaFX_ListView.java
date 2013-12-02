@@ -45,7 +45,7 @@ public class JavaFX_ListView extends Application {
 
     //Create dummy list of MyObject
     private void prepareMyList() {
-        myList = new ArrayList<>();
+        myList = new ArrayList<MyObject>();
         myList.add(new MyObject("Sunday", 50, Color.RED));
         myList.add(new MyObject("Monday", 60, Color.GREEN));
         myList.add(new MyObject("Tuesday", 20, Color.BLUE));
@@ -77,7 +77,7 @@ public class JavaFX_ListView extends Application {
         primaryStage.setTitle("http://java-buddy.blogspot.com/");
 
         prepareMyList();
-        ListView<MyObject> listView = new ListView<>();
+        ListView<MyObject> listView = new ListView<MyObject>();
         ObservableList<MyObject> myObservableList = FXCollections.observableList(myList);
         listView.setItems(myObservableList);
 

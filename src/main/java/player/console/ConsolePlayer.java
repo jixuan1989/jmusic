@@ -98,6 +98,28 @@ public class ConsolePlayer extends Application implements PlayerListener{
 					InputStream inputStream=System.in;
 					try {
 						in=(char) inputStream.read();
+						if( in=='h'){//help
+							System.out.println("\n"
+									+"p\tplay or pause 播放或者暂停\n"
+									+"s\t stop停止\n" +
+									"n\t next song下一首\n" +
+									"b\t pre song上一首\n" +
+									"=\t increase volume增大音量\n" +
+									"-\t reduce volume减少音量\n" +
+									",\t left balance左平衡\n" +
+									".\t right balance右平衡\n" +
+									"0~9\t set the equalizer Hz设置均衡器频段\n" +
+									";\t reduce equalizer降低该频段的均衡器\n" +
+									"'\t increase equalizer增加该频段的均衡器\n" +
+									"d\t set defalut(volume balance equalizer)设置为默认播放效果（音量 平衡 均衡器）\n" +
+									"\\\t next 5 seconds 前进5秒\n" +
+									"/\t pre 5 seconds 后退5秒\n" +
+									"q\t quit 退出\n" +
+									"z\t pre playlist上一个播放列表\n" +
+									"x\t next playlist下一个播放列表（目前没提供命令行创建播放列表:)\n" +
+									"if you use java -jar *.jar folderPath_or_filePath, program will add a playlist for all the songs in this folder.(启动时添加一个文件夹参数或者文件参数，将自动扫描这个文件夹下的所有音乐)\n" +
+									"for example: java -jar jmusic.jar /User/hxd/Music 比如： java -jar jmusic.jar e:/users/hxd/musics");
+						}
 						if (in=='p'){//播放暂停
 							player.playOrPause();
 						}else if(in=='s'){//停止

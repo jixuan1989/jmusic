@@ -40,7 +40,7 @@ public class JavaFX_SortListView extends Application {
 
     //Create dummy list of MyObject
     private void prepareMyList() {
-        myList = new ArrayList<>();
+        myList = new ArrayList<MyObject>();
         myList.add(new MyObject("Sunday", 50));
         myList.add(new MyObject("Monday", 60));
         myList.add(new MyObject("Tuesday", 20));
@@ -75,7 +75,7 @@ public class JavaFX_SortListView extends Application {
         primaryStage.setTitle("http://java-buddy.blogspot.com/");
 
         prepareMyList();
-        ListView<MyObject> listView = new ListView<>();
+        ListView<MyObject> listView = new ListView<MyObject>();
         ObservableList<MyObject> myObservableList = FXCollections.observableList(myList);
         listView.setItems(myObservableList);
 

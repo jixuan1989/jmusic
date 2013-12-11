@@ -1,4 +1,4 @@
-package player;
+package cn.edu.thu.hxd.player;
 /**
  * @author sainthxd@gmail.com
  */

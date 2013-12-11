@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package player.gui;
+package cn.edu.thu.hxd.player.gui;
 /**
  * @author sainthxd@gmail.com
  */
@@ -12,7 +12,7 @@ import java.net.URL;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-import player.PlayerCore;
+import cn.edu.thu.hxd.player.PlayerCore;
 import player.gui.controllers.MainController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

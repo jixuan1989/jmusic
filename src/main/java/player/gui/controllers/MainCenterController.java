@@ -10,7 +10,7 @@ import java.util.ResourceBundle;
 
 import javax.swing.ImageIcon;
 
-import player.gui.DemoFXML;
+import cn.edu.thu.hxd.player.gui.DemoFXML;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
